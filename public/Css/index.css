@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0;
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.navbar{
+    /* margin-top: -10px; */
+    height: 8vh;
+    width: 100%;
+    background-color: rgb(98, 98, 98);
+    /* position: fixed; */
+}
+nav ul{
+    /* margin-top: 10px; */
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(17, 207, 232);
+    font-weight: bolder;
+}
+ul li a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.main .image img{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+.police{
+    height: 35vh;
+    width: 20vw;
+    /* border: 2px solid red; */
+    border: none;
+    position: absolute;
+    top: 140px;
+    left: 850px;
+    background-image: url(/Assets/police.jpeg);
+    background-size: cotain;
+}
+.slogan{
+    height: auto;
+    width: 40vw;
+    font-size: 3rem;
+    font-weight: bolder;
+    position: absolute;
+    top: 180px;
+    left: 80px;
+    color: azure;
+
+}
+.about{
+    margin-top: -5px;
+    height: 110vh;
+    width: 100vw;
+    /* border: 3px solid red; */
+    position: relative;
+    background-color: rgb(45, 45, 45);
+}
+.about .container{
+    height: 90%;
+    width: 80vw;
+    /* border: 2px solid red; */
+    position: absolute;
+    top:70px ;
+    left: 100px;
+    display: grid;
+    grid-template-columns: 350px 350px 350px ;
+}
+
+.container .box{
+    height: 250px;
+    width: 250px;
+    /* border: 2px solid red; */
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.box img{
+    object-fit: contain;
+}
+.crime-name{
+    font-size: 1.2rem;
+    color: aqua;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.crime{
+    height: 10vh;
+    width: 100%;
+    font-size: 3rem;
+    position: absolute;
+    /* border: 2px solid red; */
+    font-weight: bolder;
+    text-align: center;
+    color: aqua;
+}
+/* =============criminal lsit section================ */
+.Criminal-list {
+    padding: 50px 0;
+    background-color: rgb(45, 45, 45);
+    text-align: center;
+}
+
+.Criminal-list h2 {
+    color: aqua;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+
+.criminal-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.criminal-card {
+    width: 300px;
+    background-color: #3a3a3a;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.criminal-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.criminal-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.criminal-info {
+    padding: 20px;
+    color: lightblue;
+    text-align: left;
+}
+
+.criminal-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: aqua;
+    font-weight: bold;
+}
+
+.criminal-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+/* contsctus css======================================== */
+
+.contactUs{
+    height: 85vh;
+    /* position: relative; */
+    width: 100%;
+    background-color: rgb(45, 45, 45); 
+}
+.contactUs h2{
+    color: aqua;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.contactUs p{
+    margin-left: 400px;
+    padding: 10px;
+    margin-top: 20px;
+    height: 70vh;
+    width: 50%;
+    /* border: 2px solid red; */
+    font-size: 1.2rem;
+    color:lightgray;
+}
+.country{
+    color: cornflowerblue;
+}
+span{
+    color: red;
+    font-weight: bolder;
+}
+
+/* map section cssssssssssssss=================================== */
+.last{
+    height: 70vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: rgb(45, 45, 45); 
+}
+.last p{
+    font-size: 3rem;
+    color: aqua;
+    text-align: center;
+}
+.last .message{
+    color: red;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+#map{
+    margin-top: 10px;
+    height: 50vh;
+}
+.last .leftside{
+    margin-top: 10px;
+    height: 50vh;
+    width: 20%;
+    /* border: 2px solid red; */
+}
+.last .rightside{
+    margin-top: 10px;
+    height: 50vh;
+    width: 20%;
+}
+.leftside p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+.rightside p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* news section css========================================= */
+.news-updates{
+    height: auto;
+    width: 100%;
+    background-color: #323232;
+    padding: 20px 0;
+}
+.news-updates h2{
+    color: aqua;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.news-container{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.news-box{
+    width: 30%;
+    background-color: #404040;
+    padding: 20px;
+    border-radius: 10px;
+    color: lightgray;
+}
+.news-box h3{
+    font-size: 1.5rem;
+    color: red;
+}
+.news-box p{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* emergensc section css================================= */
+.emergency-resources{
+    height: auto;
+    width: 100%;
+    background-color: #2d2d2d;
+    padding: 20px 0;
+}
+.emergency-resources h2{
+    color: aqua;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.resource-container{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.resource-box{
+    width: 30%;
+    background-color: #404040;
+    padding: 20px;
+    border-radius: 10px;
+    color: lightgray;
+}
+.resource-box h3{
+    font-size: 1.5rem;
+    color: red;
+}
+.resource-box p{
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* testimonial section csss========================== */
+.testimonials {
+    background-color: #2d2d2d;
+    color: aqua;
+    text-align: center;
+    padding: 50px 0;
+}
+.testimonials h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+}
+.testimonial-box {
+    width: 30%;
+    background-color: #3a3a3a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.testimonial-box img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.testimonial-box p {
+    font-size: 1.2rem;
+    color: lightblue;
+    margin-bottom: 10px;
+}
+.testimonial-box h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: aqua;
+}
+/* frequestion section css========================== */
+
+.faq-section{
+    height: auto;
+    width: 100%;
+    background-color: #2d2d2d;
+    padding: 40px 0;
+}
+.faq-section h2{
+    color: aqua;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.faq-container{
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.faq{
+    background-color: #404040;
+    padding: 20px;
+    border-radius: 10px;
+    color: lightgray;
+}
+.faq h3{
+    font-size: 1.5rem;
+    color: red;
+}
+.faq p{
+    font-size: 1.1rem;
+    margin-top: 10px;
+}

@@ -1,0 +1,157 @@
+/* Existing styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/Assets/pexels-ron-lach-10365943.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.form-section {
+    background: linear-gradient(135deg, rgba(253, 115, 221, 0.9) 0%, rgba(43, 113, 225, 0.9) 100%);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    color: white;
+}
+
+/* New CSS for Missing and Found Sections */
+
+.missing-section, .found-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.missing-container, .found-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.person-card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.person-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.person-card p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .glass-container {
+        padding: 20px;
+    }
+
+    .missing-container, .found-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#h2{
+    color: aqua;
+    font-size: 1.3rem;
+}
+
+
+.hidden-message{
+    font-size: 27px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}

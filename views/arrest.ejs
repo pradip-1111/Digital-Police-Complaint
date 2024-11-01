@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Arrest - Criminal</title>
+    <link rel="stylesheet" href="/Css/arrest.css">
+</head>
+<body class="background">
+    <header>
+        <h1>Criminal Arrest Report Form</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/fir">FIR</a></li>
+                <li><a href="/missing">Missing</a></li>
+                <li><a href="/contact">ContactUs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <div class="glass-container">
+            <form id="arrest-form" method="post" action="/arrest">
+                <h2>Report an Arrest</h2>
+                <label for="officer_name">Officer's Name:</label>
+                <input type="text" id="officer_name" name="officer_name" required>
+
+                <label for="officer_id">Officer ID:</label>
+                <input type="text" id="officer_id" name="officer_id" required>
+
+                <label for="criminal_name">Criminal's Name:</label>
+                <input type="text" id="criminal_name" name="criminal_name" required>
+
+                <label for="criminal_id">Criminal ID:</label>
+                <input type="text" id="criminal_id" name="criminal_id" required>
+
+                <label for="arrest_date">Date of Arrest:</label>
+                <input type="date" id="arrest_date" name="arrest_date" required>
+
+                <label for="arrest_location">Location of Arrest:</label>
+                <input type="text" id="arrest_location" name="arrest_location" required>
+
+                <label for="charges">Charges Filed:</label>
+                <textarea id="charges" name="charges" required></textarea>
+<!-- 
+                <label for="evidence">Upload Evidence (Optional):</label>
+                <input type="file" id="evidence" name="evidence"> -->
+
+                <button type="submit">Submit Arrest Report</button>
+            </form>
+            <div class="hidden-message">
+                <p><%= message %></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Arrests Section -->
+    <section class="recent-arrests-section">
+        <h2 id="h2">Recent Arrests</h2>
+        <div class="arrest-container">
+            <div class="arrest-card">
+                <h3>John Doe</h3>
+                <p><strong>Location of Arrest:</strong> Los Angeles, CA</p>
+                <p><strong>Charges:</strong> Armed robbery and resisting arrest.</p>
+                <p><strong>Date:</strong> October 20, 2024</p>
+            </div>
+
+            <div class="arrest-card">
+                <h3>Jane Smith</h3>
+                <p><strong>Location of Arrest:</strong>USA California</p>
+                <p><strong>Charges:</strong> Drug trafficking and illegal possession of firearms.</p>
+                <p><strong>Date:</strong> October 18, 2024</p>
+            </div>
+
+            <div class="arrest-card">
+                <h3>Michael Johnson</h3>
+                <p><strong>Location of Arrest:</strong> TamilNadu Chennai,India</p>
+                <p><strong>Charges:</strong> Fraud, embezzlement, and money laundering.</p>
+                <p><strong>Date:</strong> October 15, 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Wanted Criminals Section -->
+    <section class="wanted-criminals-section">
+        <h2 id="h2">Top Wanted Criminals</h2>
+        <div class="wanted-container">
+            <div class="criminal-card">
+                <img src="/Assets/person3.jpeg" alt="Criminal 1">
+                <h3>Robert Williams</h3>
+                <p><strong>Description:</strong> Wanted for multiple counts of armed robbery.</p>
+                <p><strong>Reward:</strong> $10,000</p>
+            </div>
+
+            <div class="criminal-card">
+                <img src="/Assets/person1.jpeg" alt="Criminal 2">
+                <h3>Emma Taylor</h3>
+                <p><strong>Description:</strong> Wanted for large-scale drug trafficking.</p>
+                <p><strong>Reward:</strong> $15,000</p>
+            </div>
+
+            <div class="criminal-card">
+                <img src="/Assets/person5.jpeg" alt="Criminal 3">
+                <h3>James Brown</h3>
+                <p><strong>Description:</strong> Suspected of organized crime and homicide.</p>
+                <p><strong>Reward:</strong> $20,000</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Criminal Reporting System | Powered by pradip</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File a FIR </title>
+    <link rel="stylesheet" href="/Css/fir.css">
+</head>
+<body>
+    <header>
+        <h1>FIR Registration Form</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/arrest">Arrest</a></li>
+                <li><a href="/missing">Missing</a></li>
+                <li><a href="/contact">ContactUs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <div class="glass-container">
+            <form id="fir-form" method="post" action="/fir">
+                <h2>File Your FIR</h2>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="incident_date">Date of Incident:</label>
+                <input type="date" id="incident_date" name="incident_date" required>
+
+                <label for="incident_description">Incident Description:</label>
+                <textarea id="incident_description" name="incident_description" required></textarea>
+
+
+                <button type="submit">Submit FIR</button>
+            </form>
+            <div class="hidden_message">
+                <p><%= message %></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps-section">
+        <h2>Steps to Register Your FIR</h2>
+        <ol class="steps-list">
+            <li><strong>Step 1:</strong> Fill out the FIR form with your personal information such as your name, address, and contact details.</li>
+            <li><strong>Step 2:</strong> Provide details of the incident, including the date, location, and a description of the events.</li>
+            <li><strong>Step 3:</strong> Upload any supporting documents or evidence, such as photos or videos (optional).</li>
+            <li><strong>Step 4:</strong> Double-check all the provided information for accuracy.</li>
+            <li><strong>Step 5:</strong> Click the "Submit FIR" button to send your complaint to the authorities.</li>
+            <li><strong>Step 6:</strong> You will receive a confirmation email with the details of your FIR and further steps for investigation.</li>
+        </ol>
+    </section>
+
+    <!-- New Section: Registered FIRs -->
+    <section class="fir-gallery">
+        <h2 id="h2">Recent FIR Registrations</h2>
+        <div class="fir-container">
+            <div class="fir-card">
+                <img src="/Assets/person1.jpeg" alt="John Doe">
+                <h3>Anmol KC</h3>
+                <p><strong>Problem:</strong> Theft of personal belongings.</p>
+            </div>
+
+            <div class="fir-card">
+                <img src="/Assets/person2.jpeg" alt="Jane Smith">
+                <h3>Swastima Khadka</h3>
+                <p><strong>Problem:</strong> Missing person report.</p>
+            </div>
+
+            <div class="fir-card">
+                <img src="/Assets/person3.jpeg" alt="Rajesh Kumar">
+                <h3>Salman Ali</h3>
+                <p><strong>Problem:</strong> Assault in public place.</p>
+            </div>
+
+            <div class="fir-card">
+                <img src="/Assets/person4.jpeg" alt="Fatima Ali">
+                <h3>Begam Khatoon</h3>
+                <p><strong>Problem:</strong> Cybercrime - fraudulent activity.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Online FIR Registration System | Powered by pradip!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Missing Person</title>
+    <link rel="stylesheet" href="/Css/missing.css">
+</head>
+<body class="background">
+    <header>
+        <h1>Missing Person Report Form</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/arrest">Arrest</a></li>
+                <li><a href="/missing">Missing</a></li>
+                <li><a href="/contact">ContactUs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-section">
+        <div class="glass-container">
+            <form id="missing-form" method="post" action="/missing">
+                <h2>Report a Missing Person</h2>
+
+                <label for="reporter_name">Your Name:</label>
+                <input type="text" id="reporter_name" name="reporter_name" required>
+
+                <label for="reporter_contact">Your Contact Number:</label>
+                <input type="tel" id="reporter_contact" name="reporter_contact" required>
+
+                <label for="missing_person_name">Missing Person's Name:</label>
+                <input type="text" id="missing_person_name" name="missing_person_name" required>
+
+                <label for="missing_person_id">Missing Person ID:</label>
+                <input type="text" id="missing_person_id" name="missing_person_id" required>
+
+                <label for="missing_date">Date of Disappearance:</label>
+                <input type="date" id="missing_date" name="missing_date" required>
+
+                <label for="missing_location">Last Seen Location:</label>
+                <input type="text" id="missing_location" name="missing_location" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+
+                <button type="submit">Submit Missing Report</button>
+            </form>
+            <div class="hidden_message">
+                <p><%= message %></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- People Missing Section -->
+    <section class="missing-section">
+        <h2 id="h2">People Reported Missing</h2>
+        <div class="missing-container">
+            <div class="person-card">
+                <img src="/Assets/person1.jpeg" alt="Person 1">
+                <h3>Alex Johnson</h3>
+                <p><strong>Last Seen Location:</strong> Central Park, NY</p>
+                <p><strong>Description:</strong> Wearing a blue jacket, last seen at 5 PM on October 10, 2024.</p>
+            </div>
+
+            <div class="person-card">
+                <img src="/Assets/person2.jpeg" alt="Person 2">
+                <h3>Maria Lopez</h3>
+                <p><strong>Last Seen Location:</strong> Downtown Los Angeles</p>
+                <p><strong>Description:</strong> Wearing a red dress, last seen entering a taxi on October 12, 2024.</p>
+            </div>
+
+            <div class="person-card">
+                <img src="/Assets/person3.jpeg" alt="Person 3">
+                <h3>Michael Brown</h3>
+                <p><strong>Last Seen Location:</strong> Chicago Riverwalk</p>
+                <p><strong>Description:</strong> Last seen jogging near the riverbank on October 8, 2024.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- People Found Section -->
+    <section class="found-section">
+        <h2 id="h2">People Found</h2>
+        <div class="found-container">
+            <div class="person-card">
+                <img src="/Assets/person4.jpeg" alt="Found Person 1">
+                <h3>Sarah Williams</h3>
+                <p><strong>Contact Number:</strong> (123) 456-7890</p>
+                <p><strong>Description:</strong> Sarah was found safe on October 15, 2024. Please contact for more information.</p>
+            </div>
+
+            <div class="person-card">
+                <img src="/Assets/person5.jpeg" alt="Found Person 2">
+                <h3>James Carter</h3>
+                <p><strong>Contact Number:</strong> (987) 654-3210</p>
+                <p><strong>Description:</strong> James was located on October 14, 2024. Contact for further details.</p>
+            </div>
+
+            <div class="person-card">
+                <img src="/Assets/person6.jpeg" alt="Found Person 3">
+                <h3>Emily Davis</h3>
+                <p><strong>Contact Number:</strong> (555) 123-4567</p>
+                <p><strong>Description:</strong> Emily was reunited with her family on October 13, 2024. Call for more info.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Missing Person Reporting System | Powered by pradip!</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

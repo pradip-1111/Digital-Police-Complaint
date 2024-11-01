@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/Assets/firimage.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); 
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+    font-size: 1.3rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.form-section {
+    background: linear-gradient(135deg, rgba(231, 191, 217, 0.9) 0%, rgba(148, 82, 82, 0.9) 100%);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+.fir-gallery {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.fir-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fir-card {
+    background-color: rgba(214, 210, 210, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#h2{
+    color:red;
+}
+
+.fir-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.fir-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.fir-card p {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+
+/* New styles for Steps to Register FIR */
+.steps-section {
+    background-color: rgba(244, 165, 165, 0.9);
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.steps-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.steps-list {
+    list-style-type: decimal;
+    padding-left: 40px;
+    font-size: 1.1rem;
+}
+
+.steps-list li {
+    margin-bottom: 15px;
+}
+
+.hidden_message p{
+    font-size: 27px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
